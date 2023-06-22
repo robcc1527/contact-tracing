@@ -7,7 +7,7 @@ public with sharing class RC_CreateBoardGames {
             RC_Board_Game__c bg = new RC_Board_Game__c(
                 Name = 'Throw in Name' + i,
                 Price__c = 3.25 * i,
-                Publisher = a018b00000zp3ANAAY
+                Publisher__c = 'a018b00000zp3ANAAY'
             );
                 boardGamesList.add(bg);
         }

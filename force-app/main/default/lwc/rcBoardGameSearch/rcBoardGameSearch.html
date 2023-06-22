@@ -1,0 +1,14 @@
+<template>
+	<lightning-card title="Search for a game" icon-name="custom:custom63">
+		<div class="slds-m-around_medium">
+			<template lwc:if={games.data}>
+				<template for:each={games.data} for:item="game">
+					<p key={game.Id}>{game.Name} is the BEST!</p>
+				</template>
+			</template>
+			<template lwc:elseif={games.error}>
+				<c-error-panel errors={games.error}></c-error-panel>
+			</template>
+		</div>
+	</lightning-card>
+</template>
